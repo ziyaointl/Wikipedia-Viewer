@@ -9,17 +9,22 @@
 </head>
 
 <body>
-<div class="container outer">
+<div class="container outer" id="main">
     <div class="middle">
         <div class="inner">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
                     <img src="img/logo.svg" alt="W">
-                    <input type="text" class="form-control input-lg" placeholder="">
+                    <input type="text" class="form-control input-lg" v-model="input">
                     <div class="buttons">
-                        <button class="btn btn-default btn-lg" type="button">Search</button>
+                        <button class="btn btn-default btn-lg" type="button" v-on:click="submitRequest">Search</button>
                         <button class="btn btn-default btn-lg" type="button">Random</button>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <wiki-page v-for="page in pageData" v-bind:page="page"></wiki-page>
                 </div>
             </div>
         </div>
