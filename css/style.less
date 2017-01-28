@@ -1,18 +1,28 @@
 @import "bootstrap.less";
 
-.bordered {
-  border: solid;
+h1 {
+  text-align: center;
 }
 
-img {
-  width: 20%;
-}
-
-input {
-  width: 100%;
-  padding: 12px 20px;
-}
-
-.main {
+input, img{
+  display: block;
   margin: auto;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
