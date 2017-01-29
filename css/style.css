@@ -3174,9 +3174,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: none !important;
   }
 }
-h1 {
-  text-align: center;
-}
 input,
 img {
   display: block;
@@ -3206,4 +3203,16 @@ input {
 }
 .add-margin {
   margin-top: 40px;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:focus {
+  color: black;
+}
+.search-result {
+  margin-top: 20px;
 }

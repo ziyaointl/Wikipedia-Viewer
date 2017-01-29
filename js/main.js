@@ -1,6 +1,7 @@
 Vue.component('wiki-page', {
     props:['page'],
-    template: '<li class="ccol-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">{{ page.title }} {{page.URL}}</li>'
+    // template: '<li class="ccol-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">{{ page.title }} {{page.URL}}</li>'
+    template: '<div class="row"> <div class="col-lg-6 col-lg-offset-3 search-result"> <a v-bind:href="page.URL"><h2>{{page.title}}</h2></a> <p v-html="page.snippet"></p> </div> </div>'
 });
 
 var app = new Vue({
