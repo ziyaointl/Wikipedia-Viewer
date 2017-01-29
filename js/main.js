@@ -1,6 +1,6 @@
 Vue.component('wiki-page', {
     props:['page'],
-    template: '<li>{{ page.title }}</li>'
+    template: '<li class="ccol-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">{{ page.title }}</li>'
 });
 
 var app = new Vue({
@@ -22,6 +22,7 @@ var app = new Vue({
                     response.query.search.forEach(function (page) {
                         temp.push(page);
                     });
+                    document.getElementById('icon').className += "add-margin";
                 }
             }
         }

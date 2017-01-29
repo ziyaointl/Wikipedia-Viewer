@@ -3204,3 +3204,6 @@ input {
 .buttons {
   text-align: center;
 }
+.add-margin {
+  margin-top: 40px;
+}
